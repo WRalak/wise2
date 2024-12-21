@@ -33,7 +33,7 @@ const Navbar: React.FC = () => {
         {/* Menu for larger screens */}
         <div className="hidden md:flex  items-center space-x-6 lg:mr-40">
           <Link href="/">
-            <p className="text-gray-600 text-sm hover:text-blue-600">Home</p>
+            <p className="text-black text-sm ">Home</p>
           </Link>
           <div
             className="relative"
@@ -41,7 +41,7 @@ const Navbar: React.FC = () => {
             onMouseLeave={() => setIsHovered(false)}
             onClick={() => setIsContainerVisible(!isContainerVisible)}
           >
-            <p className="text-gray-600 text-sm cursor-pointer hover:text-blue-600">
+            <p className="text-black text-xs cursor-pointer ">
               Services
             </p>
             {(isHovered || isContainerVisible) && (
@@ -72,31 +72,31 @@ const Navbar: React.FC = () => {
             )}
           </div>
           <Link href="/resources">
-            <p className="text-gray-600 text-sm hover:text-blue-600">Resources</p>
+            <p className="text-black text-xs">Resources</p>
           </Link>
           <Link href="/support">
-            <p className="text-gray-600 text-sm hover:text-blue-600">Support</p>
+            <p className="text-black text-xs">Support</p>
           </Link>
           <Link href="/careers">
-            <p className="text-gray-600 text-sm hover:text-blue-600">Careers</p>
+            <p className="text-black text-xs">Careers</p>
           </Link>
         </div>
 
         {/* Right section */}
         <div className="hidden md:flex items-center space-x-4 lg:mr-10">
           <Link href="/contact">
-            <p className="text-gray-600 text-sm ">
+            <p className="text-black text-xs ">
               Contact Us
             </p>
           </Link>
           <Link href="/login">
-            <button className="border-2 px-4 py-2 border-blue-500 text-blue-600 rounded-lg text-sm">
+            <button className="border px-4 py-2 border-blue-500 text-blue-600 rounded-lg text-xs">
               Log In
             </button>
           </Link>
           <button
             onClick={toggleFormVisibility}
-            className="bg-blue-500 text-white px-4 py-2 rounded-lg  text-sm"
+            className="bg-blue-500 text-white px-4 py-2 rounded-lg  text-xs"
           >
             Start for Free
           </button>
@@ -133,22 +133,22 @@ const Navbar: React.FC = () => {
         <div className="md:hidden bg-white shadow-md">
           <div className="px-4 py-2 space-y-2">
             <Link href="/">
-              <p className="block text-gray-600 text-sm">Home</p>
+              <p className="block text-black font-bold text-sm">Home</p>
             </Link>
             <Link href="/services">
-              <p className="block text-gray-600 text-sm">Services</p>
+              <p className="block text-black font-bold text-sm">Services</p>
             </Link>
             <Link href="/resources">
-              <p className="block text-gray-600 text-sm">Resources</p>
+              <p className="block text-black font-bold text-sm">Resources</p>
             </Link>
             <Link href="/support">
-              <p className="block text-gray-600 text-sm">Support</p>
+              <p className="block text-black font-bold text-sm">Support</p>
             </Link>
             <Link href="/careers">
-              <p className="block text-gray-600 text-sm">Careers</p>
+              <p className="block text-black font-bold text-sm">Careers</p>
             </Link>
             <Link href="/contact">
-              <p className="block text-gray-600 text-sm">Contact Us</p>
+              <p className="block text-black font-bold text-sm">Contact Us</p>
             </Link>
             <button className="block w-full text-left border-2 bg-white border-blue-600 text-blue-600 px-4 py-2 rounded text-sm">
               Log In
