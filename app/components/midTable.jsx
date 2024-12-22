@@ -5,7 +5,7 @@ const MidTable = () => {
   return (
     <section className="bg-gray-50 py-16">
       <div className="max-w-5xl mx-auto px-6 md:px-10 lg:px-16">
-        <div className="grid gap-8 md:gap-6 md:grid-cols-3">
+        <div className="grid gap-8 md:gap-6 md:grid-cols-3 lg:ml-30">
           {/* Left Section */}
           <div className="text-center md:text-left">
             <h2 className="text-sm font-bold text-gray-800">

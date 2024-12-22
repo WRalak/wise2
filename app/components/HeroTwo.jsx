@@ -6,41 +6,51 @@ import { BiBone } from "react-icons/bi";
 
 const HeroTwo = () => {
   return (
-    <section className="w-full bg-blue-500 py-8 mt-4 lg:mt-0">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-screen-xl">
-        {/* Heading */}
-        <p className="text-sm font-medium text-white mb-8 text-center lg:text-left l]g:ml-[330px">
-          What type of therapy are you looking for?
-        </p>
+    <section className="w-full lg:mb-20 bg-blue-500 py-8">
+        <div className="mx-auto px-8 max-w-7xl">
+          {/* Heading */}
+          <p className="text-sm font-medium lg:ml-52 text-white mb-8">
+            What type of therapy are you looking for?
+          </p>
 
-        {/* Icons and Descriptions */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-white text-center lg:text-left lg:gap-6">
-          {/* Icon 1 */}
-          <div className="flex items-center gap-2 justify-center lg:justify-start">
-            <IoMdPeople size={20} />
-            <p className="">Socialization</p>
-          </div>
+          {/* Icons and Descriptions */}
+          <div className="flex flex-col sm:flex-row justify-center sm:gap-8 text-white">
+            {/* Icon 1 */}
+            <div className="flex items-center gap-2 mb-4 sm:mb-0">
+              <IoMdPeople size={14} />
+              <p className="ml-2">Socialization</p>
+            </div>
 
-          {/* Icon 2 */}
-          <div className="flex items-center gap-2 justify-center lg:justify-start">
-            <TbToolsKitchen3 size={20} />
-            <p className="leading-tight">Light household chores</p>
-          </div>
+            {/* Divider (visible on larger screens only) */}
+            <span className="mx-2 text-white hidden sm:block">|</span>
 
-          {/* Icon 3 */}
-          <div className="flex items-center gap-2 justify-center lg:justify-start">
-            <FaTruck size={20} />
-            <p className="leading-tight">Transportation</p>
-          </div>
+            {/* Icon 2 */}
+            <div className="flex items-center gap-2 mb-4 sm:mb-0">
+              <TbToolsKitchen3 size={14} />
+              <p className="ml-2 text-sm">Light household chores</p>
+            </div>
 
-          {/* Icon 4 */}
-          <div className="flex items-center gap-2 justify-center lg:justify-start">
-            <BiBone size={20} />
-            <p className="leading-tight">Pet Care</p>
+            {/* Divider (visible on larger screens only) */}
+            <span className="mx-2 text-white hidden sm:block">|</span>
+
+            {/* Icon 3 */}
+            <div className="flex items-center gap-2 mb-4 sm:mb-0">
+              <FaTruck size={14} />
+              <p className="ml-2 text-sm">Transportation</p>
+            </div>
+
+            {/* Divider (visible on larger screens only) */}
+
+            <span className="mx-2 text-white hidden sm:block">|</span>
+
+            {/* Icon 4 */}
+            <div className="flex items-center gap-2 mb-4 sm:mb-0">
+              <BiBone size={14} />
+              <p className="ml-2 text-sm">Pet Care</p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
   );
 };
 
