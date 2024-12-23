@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const AboutUsSection = () => {
   return (
-    <section className="relative bg-gray-50 py-16 flex justify-center items-center">
+    <section className="relative py-16 flex justify-center items-center">
       {/* MidSection placed above About Us content */}
 
       {/* Image Container */}

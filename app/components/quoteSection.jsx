@@ -7,43 +7,46 @@ const QuoteSection = () => {
     <div className="flex justify-center items-center flex-col">
       {/* Quote Section */}
       <section className="bg-gray-50 py-16 px-4 sm:px-6 flex justify-center items-center w-full">
-        <div className="max-w-lg text-center">
-          {/* Quote Text with Icon */}
-          <div className="flex flex-col items-center mb-6">
-            {/* Quote Icon */}
-            <FaQuoteLeft className=" text-gray-600  text-3xl mb-4" />
-            {/* Quote Text */}
-            <p className="text-gray-950 mt-4 text-base sm:text-lg">
-              Our network of therapists and psychiatric providers have specialization in
-              150+ conditions, treatment approaches, and mental health needs.
-            </p>
-          </div>
+  <div className="max-w-lg text-center">
+    {/* Quote Text with Icon */}
+    <div className="flex  items-center mb-6">
+      {/* Quote Icon */}
+      <FaQuoteLeft className="text-gray-950 text-4xl mb-14" />
+      
+      {/* Quote Text */}
+      <p className="text-gray-950 mt-2 text-base sm:text-lg">
+        Our network of therapists and psychiatric providers have specialization in
+        150+ conditions, treatment approaches, and mental health needs.
+      </p>
+    </div>
 
-          {/* CEO Information */}
-          <div className="flex flex-col sm:flex-row items-center justify-center mt-4 gap-4">
-            {/* Rounded Image */}
-            <div className="w-12 h-12 rounded-full overflow-hidden">
-              <Image
-                src="/wise6.jpg" // Replace with the CEO's image path
-                alt="CEO"
-                width={48} // Adjust width to fit the container size
-                height={48} // Adjust height to fit the container size
-                className="object-cover"
-              />
-            </div>
+    {/* CEO Information */}
+    <div className="flex flex-col sm:flex-row items-center justify-center mt-4 gap-4">
+      {/* Rounded Image */}
+      <div className="w-12 h-12 rounded-full overflow-hidden">
+        <Image
+          src="/wise6.jpg" // Replace with the CEO's image path
+          alt="CEO"
+          width={48} // Adjust width to fit the container size
+          height={48} // Adjust height to fit the container size
+          className="object-cover"
+        />
+      </div>
 
-            {/* Divider and Name */}
-            <div className="flex flex-col sm:flex-row items-center text-gray-800">
-              <p className="font-semibold">Mitchell Lebowitz</p>
-              <span className="hidden sm:block mx-2 text-red-400">|</span>
-              <p className="text-sm text-gray-600">CEO, WISE</p>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Divider and Name */}
+      <div className="flex flex-col sm:flex-row items-center text-gray-800">
+        <p className="font-semibold text-xs">Mitchell Lebowitz</p>
+        <span className="hidden sm:block mx-2 text-red-400">|</span>
+        <p className="text-gray-600 text-xs">CEO, WISE</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 
       {/* Our History Section */}
-       {/* Our History Section */}
+      
        <section className="bg-white py-16 px-4 sm:px-6 w-full">
         {/* Our History Heading */}
         <h2 className="text-xs font-bold text-gray-950 text-center lg:text-left mb-8 lg:ml-[250px]">

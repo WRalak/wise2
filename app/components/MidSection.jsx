@@ -76,7 +76,7 @@ const WellnessInstitute = () => {
   return (
     <div>
       {/* Container Section (Carousel) */}
-      <section className="w-full py-20 bg-gray-50">
+      <section className="w-full py-20">
         <div className="container mx-auto px-4">
           <div className="overflow-hidden">
             <div
@@ -116,7 +116,7 @@ const WellnessInstitute = () => {
 
       {/* Image Section (Responsive Image) */}
       <section className="py-10">
-        <div className="mx-auto px-4 flex justify-center">
+        <div className="mx-auto px-4 flex justify-center lg:ml-48">
           <Image
             src="/wise4.jpeg" // Replace with your image path
             alt="Wellness Institute"
@@ -128,9 +128,9 @@ const WellnessInstitute = () => {
       </section>
 
       {/* FAQs Section */}
-      <section className="w-full py-20 bg-gray-50">
+      <section className="w-full py-20 ">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-xl font-bold mb-6">FAQs</h2>
+          <h2 className="text-xl font-bold mb-6 ">FAQs</h2>
 
           {/* Collapsible FAQs */}
           <div className="flex flex-col items-start max-w-md mx-auto">
@@ -142,12 +142,12 @@ const WellnessInstitute = () => {
                 >
                   <div className="flex items-center justify-center w-6 h-6 bg-gray-300 rounded-full mr-4">
                     {openFAQ[index] ? (
-                      <MdRemove size={20} className="text-gray-600" />
+                      <MdRemove size={15} className="text-gray-600" />
                     ) : (
-                      <MdAdd size={20} />
+                      <MdAdd size={15} />
                     )}
                   </div>
-                  <p className="text-sm font-bold">{faq.question}</p>
+                  <p className="text-xs font-bold">{faq.question}</p>
                 </div>
 
                 {openFAQ[index] && (
@@ -170,11 +170,11 @@ const WellnessInstitute = () => {
 
         <div className="flex flex-wrap justify-center space-x-8 mt-6">
           {[ 
-            { name: "John Doe", title: "CEO", imgSrc: "/wise6.jpg" },
-            { name: "Jane Smith", title: "COO", imgSrc: "/wise8.jpg" },
-            { name: "Mark Brown", title: "CTO", imgSrc: "/wise7.jpg" },
-            { name: "Emma White", title: "CFO", imgSrc: "/wise9.jpg" },
-            { name: "Sophia Lee", title: "CMO", imgSrc: "/wise5.jpg" }
+            { name: "John Doe", title: "Marketing", imgSrc: "/wise6.jpg" },
+            { name: "Jane Smith", title: "Operations", imgSrc: "/wise8.jpg" },
+            { name: "Mark Brown", title: "CFO", imgSrc: "/wise7.jpg" },
+            { name: "Emma White", title: "CEO", imgSrc: "/wise9.jpg" },
+            { name: "Sophia Lee", title: "Marketing", imgSrc: "/wise5.jpg" }
           ].map((member, index) => (
             <div key={index} className="flex flex-col items-center mb-6">
               <div className="w-24 h-24 rounded-full overflow-hidden mb-2">
@@ -187,7 +187,7 @@ const WellnessInstitute = () => {
                 />
               </div>
               <p className=" text-sm font-semibold">{member.name}</p>
-              <p className="text-xs">{member.title}</p>
+              <p className="text-xs text-slate-600 mt-1">{member.title}</p>
             </div>
           ))}
         </div>

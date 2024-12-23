@@ -17,7 +17,7 @@ const HeroTherapySection = () => {
             >
               Connecting families to <br /> trusted compassionate <br /> care companions.
             </h1>
-            <p className="text-gray-800 mb-8 text-xs sm:text-xs lg:text-sm  leading-relaxed">
+            <p className="text-gray-800 mb-8 text-xs sm:text-xs lg:text-sm leading-relaxed">
               WISEHealth provides a companion care program with vetted, <br />
               trained, and compassionate care companions to help with <br />
               socialization, meal preparation, and light housework.
@@ -25,7 +25,7 @@ const HeroTherapySection = () => {
             <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
               {/* Button 1 */}
               <Link href="/login">
-                <button className="bg-blue-500 text-white px-4 py-2 text-xs sm:text-sm rounded-lg  flex items-center gap-2 w-full sm:w-auto">
+                <button className="bg-blue-500 text-white px-4 py-2 text-xs sm:text-sm rounded-lg flex items-center gap-2 w-full sm:w-auto">
                   Find Compassion
                   <MdArrowOutward size={13} />
                 </button>
@@ -42,8 +42,8 @@ const HeroTherapySection = () => {
           </div>
 
           {/* Image */}
-          <div className="relative flex-1 justify-center lg:justify-end lg:self-center h-full">
-            <div className="relative w-full h-64 sm:w-96 sm:h-96 lg:w-[460px] lg:h-[600px]">
+          <div className="relative flex-1 flex justify-center lg:justify-end lg:self-center h-full">
+            <div className="relative w-full h-auto sm:w-96 sm:h-96 lg:w-[460px] lg:h-[600px]">
               <Image
                 src="/wise1.jpeg" // Ensure the path is correct
                 alt="Hero Image"
@@ -60,3 +60,6 @@ const HeroTherapySection = () => {
 };
 
 export default HeroTherapySection;
+
+
+
