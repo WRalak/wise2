@@ -88,7 +88,7 @@ const WellnessInstitute = () => {
               {years.map((year, index) => (
                 <div
                   key={index}
-                  className="min-w-[220px] h-[170px] flex flex-col items-center bg-white p-4 shadow-md rounded-md "
+                  className="min-w-[220px] sm:min-w-[280px] h-[170px] flex flex-col items-center bg-white p-4 shadow-md rounded-md mx-2"
                 >
                   <h3 className="text-xl font-bold mb-4">{year}</h3>
                   <p className="text-sm text-center">
@@ -161,24 +161,22 @@ const WellnessInstitute = () => {
         </div>
         {/* Team Members */}
         <div className="mt-12 text-left lg:ml-[330px]">
-  <h6 className="font-semibold mb-2">Amplified by a global team</h6>
-  <p className="text-xs">
-    The Wellness Institute for Senior Empowerment (WISE) was <br />
-    established by a national team of elite medical professionals.
-  </p>
-</div>
+          <h6 className="font-semibold mb-2">Amplified by a global team</h6>
+          <p className="text-xs">
+            The Wellness Institute for Senior Empowerment (WISE) was <br />
+            established by a national team of elite medical professionals.
+          </p>
+        </div>
 
-
-
-        <div className="flex justify-center space-x-8 mt-6">
-          {[
+        <div className="flex flex-wrap justify-center space-x-8 mt-6">
+          {[ 
             { name: "John Doe", title: "CEO", imgSrc: "/wise6.jpg" },
             { name: "Jane Smith", title: "COO", imgSrc: "/wise8.jpg" },
             { name: "Mark Brown", title: "CTO", imgSrc: "/wise7.jpg" },
             { name: "Emma White", title: "CFO", imgSrc: "/wise9.jpg" },
-            { name: "Sophia Lee", title: "CMO", imgSrc: "/wise5.jpg" },
+            { name: "Sophia Lee", title: "CMO", imgSrc: "/wise5.jpg" }
           ].map((member, index) => (
-            <div key={index} className="flex flex-col items-center">
+            <div key={index} className="flex flex-col items-center mb-6">
               <div className="w-24 h-24 rounded-full overflow-hidden mb-2">
                 <Image
                   src={member.imgSrc}
@@ -199,4 +197,3 @@ const WellnessInstitute = () => {
 };
 
 export default WellnessInstitute;
-

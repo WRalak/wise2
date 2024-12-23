@@ -1,4 +1,4 @@
-"use client";
+'use client'
 
 import React, { useState } from "react";
 import Link from "next/link";
@@ -24,16 +24,16 @@ const Navbar: React.FC = () => {
 
   return (
     <nav className="backdrop-blur-md bg-white/80 shadow-md w-full fixed top-0 z-50">
-      <div className=" container mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16">
         {/* Logo */}
-        <div className="text-transparent bg-clip-text bg-gradient-to-r from-[#F43F5E] to-[#3B82F6] italic text-xl md:text-2xl font-bold lg:ml-60">
+        <div className="text-transparent bg-clip-text bg-gradient-to-r from-[#F43F5E] to-[#3B82F6] italic text-xl md:text-2xl font-bold">
           WISE
         </div>
 
         {/* Menu for larger screens */}
-        <div className="hidden md:flex  items-center space-x-6 lg:mr-40">
+        <div className="hidden md:flex items-center space-x-6 lg:mr-40">
           <Link href="/">
-            <p className="text-black text-sm ">Home</p>
+            <p className="text-black text-sm">Home</p>
           </Link>
           <div
             className="relative"
@@ -41,7 +41,7 @@ const Navbar: React.FC = () => {
             onMouseLeave={() => setIsHovered(false)}
             onClick={() => setIsContainerVisible(!isContainerVisible)}
           >
-            <p className="text-black text-xs cursor-pointer ">
+            <p className="text-black text-xs cursor-pointer">
               Services
             </p>
             {(isHovered || isContainerVisible) && (
@@ -85,9 +85,7 @@ const Navbar: React.FC = () => {
         {/* Right section */}
         <div className="hidden md:flex items-center space-x-4 lg:mr-10">
           <Link href="/contact">
-            <p className="text-black text-xs ">
-              Contact Us
-            </p>
+            <p className="text-black text-xs">Contact Us</p>
           </Link>
           <Link href="/login">
             <button className="border px-4 py-2 border-blue-500 text-blue-600 rounded-lg text-xs">
@@ -96,7 +94,7 @@ const Navbar: React.FC = () => {
           </Link>
           <button
             onClick={toggleFormVisibility}
-            className="bg-blue-500 text-white px-4 py-2 rounded-lg  text-xs"
+            className="bg-blue-500 text-white px-4 py-2 rounded-lg text-xs"
           >
             Start for Free
           </button>

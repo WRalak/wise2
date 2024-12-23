@@ -5,8 +5,8 @@ import Link from 'next/link';
 
 const HeroTherapySection = () => {
   return (
-    <div className="bg-gray-50 flex flex-col min-h-screen w-full">
-      <section className="flex items-center justify-center w-full py-6 mx-auto max-w-screen-xl ">
+    <div className="bg-gray-50 flex flex-col w-full">
+      <section className="flex items-center justify-center w-full py-6 mx-auto max-w-screen-xl mt-[50px] sm:mt-[50px] md:mt-[100px]">
         <div className="w-full flex flex-col lg:flex-row items-stretch gap-8 px-4 sm:px-6 lg:gap-12 lg:ml-[200px] lg:mr-[50px]">
           
           {/* Text Content */}
@@ -17,7 +17,7 @@ const HeroTherapySection = () => {
             >
               Connecting families to <br /> trusted compassionate <br /> care companions.
             </h1>
-            <p className="text-gray-800 mb-8 text-xs sm:text-base lg:text-sm leading-relaxed">
+            <p className="text-gray-800 mb-8 text-xs sm:text-xs lg:text-sm leading-relaxed">
               WISEHealth provides a companion care program with vetted, <br />
               trained, and compassionate care companions to help with <br />
               socialization, meal preparation, and light housework.
@@ -60,4 +60,3 @@ const HeroTherapySection = () => {
 };
 
 export default HeroTherapySection;
-
