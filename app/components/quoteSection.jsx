@@ -11,9 +11,9 @@ const QuoteSection = () => {
           {/* Quote Text with Icon */}
           <div className="flex flex-col items-center mb-6">
             {/* Quote Icon */}
-            <FaQuoteLeft className="text-black text-5xl mb-4" />
+            <FaQuoteLeft className=" text-gray-600  text-3xl mb-4" />
             {/* Quote Text */}
-            <p className="text-gray-700 mt-4 text-base sm:text-lg">
+            <p className="text-gray-950 mt-4 text-base sm:text-lg">
               Our network of therapists and psychiatric providers have specialization in
               150+ conditions, treatment approaches, and mental health needs.
             </p>
@@ -46,15 +46,15 @@ const QuoteSection = () => {
        {/* Our History Section */}
        <section className="bg-white py-16 px-4 sm:px-6 w-full">
         {/* Our History Heading */}
-        <h2 className="text-sm font-bold text-gray-800 text-center lg:text-left mb-8 lg:ml-[250px]">
+        <h2 className="text-xs font-bold text-gray-950 text-center lg:text-left mb-8 lg:ml-[250px]">
           Our History
         </h2>
 
         {/* Flex Container for Main Description and Key Initiatives */}
         <div className="flex flex-col lg:flex-row gap-8 lg:ml-[250px] ml-4">
           {/* Main Description */}
-          <div className="flex-1 text-gray-700">
-            <p className="text-sm leading-relaxed mb-4">
+          <div className="flex-1 text-gray-950">
+            <p className="text-xs leading-relaxed  text-gray-950 mb-4">
               The Wellness Institute for Senior Empowerment (WISE) was established by a
               national team of elite medical and mental health providers and clinicians
               with over 120 years of combined professional geriatric care experience (from
@@ -66,8 +66,8 @@ const QuoteSection = () => {
           </div>
 
           {/* Key Initiatives */}
-          <div className="flex-1 text-gray-700 lg:mr-40">
-            <p className="text-sm leading-relaxed mb-4">
+          <div className="flex-1 text-gray-950 lg:mr-40">
+            <p className="text-xs leading-loose mb-4">
               1. Continuous research to provide current and meaningful information to the
               global community. <br />
               2. Assess the (SODH), TOC, and routine needs of seniors and (ICs). <br />

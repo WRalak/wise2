@@ -11,7 +11,7 @@ const MidTable = () => {
             <h2 className="text-sm font-bold text-gray-800">
               <span className="text-blue-500">|</span> Our Mission
             </h2>
-            <p className="text-sm text-gray-600 mt-4">
+            <p className="text-xs text-gray-950 mt-4">
               To empower seniors and their (ICs) <br />
               with information, tools, and <br />
               resources to improve their health <br />
@@ -24,7 +24,7 @@ const MidTable = () => {
             <h2 className="text-sm font-bold text-gray-800">
               <span className="text-red-500">|</span> Our Vision
             </h2>
-            <p className="text-sm text-gray-600 mt-4">
+            <p className="text-xs text-gray-950 mt-4">
               Our companions provide <br />
               socialization and companionship, <br />
               light household tasks, trips around <br />
@@ -38,7 +38,7 @@ const MidTable = () => {
             <h2 className="text-sm font-bold text-gray-800">
               <span className="text-blue-500">|</span> Our Core Values
             </h2>
-            <p className="text-sm text-gray-600 mt-4">
+            <p className="text-xs text-gray-950 mt-4">
               The focus of Interactive Caregiving is <br />
               doing things with our clients instead <br />
               of just doing things for them. While <br />
