@@ -57,8 +57,8 @@ const Footer = () => {
           <div className="border-t-2 border-gray-100 mt-4"></div>
 
           {/* WISE Section */}
-          <div className="mt-6 mb-10 lg:ml-[330px] text-center sm:text-left">
-            <div className="text-transparent bg-clip-text bg-gradient-to-r from-[#F43F5E] to-[#3B82F6] text-xl font-bold italic lg">
+          <div className="mt-6 mb-10  text-center sm:text-left">
+            <div className="text-transparent bg-clip-text bg-gradient-to-r from-[#F43F5E] to-[#3B82F6] text-xl font-bold italic">
               WISE
             </div>
             <p className="text-sm text-gray-800">
@@ -94,8 +94,8 @@ const Footer = () => {
           </div>
 
           {/* Copyright */}
-          <div className="text-center mt-10 text-gray-600 text-sm">
-            &copy; {currentYear} WISE. All rights reserved.
+          <div className="sm:text-center mt-10 text-gray-600 text-sm">
+            &copy; {currentYear} 
           </div>
         </div>
       </div>
@@ -104,3 +104,4 @@ const Footer = () => {
 };
 
 export default Footer;
+
