@@ -60,7 +60,7 @@ export default function ExampleSection() {
         <h2 className="text-xl sm:text-3xl font-bold text-gray-800">
           Why Choose WISE Companion
         </h2>
-        <p className="text-gray-600 text-sm sm:text-base mt-4">
+        <p className="text-gray-950 text-sm sm:text-sm mt-4">
           WISE Companion offers a wide range of powerful features to help you excel
           and reach new <br /> heights in the world of corporate training.
         </p>
@@ -71,21 +71,21 @@ export default function ExampleSection() {
           <div key={index} className="flex  flex-col">
             <Icon className={`text-xl text-white ${bgColor} mb-4`} />
             <h4 className="font-bold text-gray-800 text-xs sm:text-sm">{title}</h4>
-            <p className="text-gray-600 text-xs sm:text-base">{description}</p>
-            {link && <p className="text-blue-700">{link}</p>}
+            <p className="text-gray-950 text-xs sm:text-xs">{description}</p>
+            {link && <p className="text-blue-700 text-xs">{link}</p>}
           </div>
         ))}
       </div>
 <div>
 </div>
 <div className="flex flex-col items-start space-y-4">
-  <p className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed text-left">
+  <p className="text-xs sm:text-xs md:text-sm text-gray-950 leading-relaxed text-left">
     Join WISE Companion today and unlock your full potential as a corporate trainer. <br className="hidden md:block" />
     Elevate your training experience, connect with like-minded experts, and reach new <br className="hidden md:block" /> heights 
     in the world of corporate training. Together, we&apos;ll make a profound impact on <br className="hidden md:block" /> professional
     growth and learning. Join us now and embark on an empowering <br className="hidden md:block" /> journey with WISE Companion!
   </p>
-  <button className="flex items-center bg-blue-700 text-white rounded py-2 px-4 mt-2 hover:bg-blue-800 transition-all duration-300">
+  <button className="flex items-center bg-blue-500 text-white rounded py-2 px-4 mt-2 text-xs ">
     Get Started
     <MdArrowOutward size={15} className="ml-2" />
   </button>

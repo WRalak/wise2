@@ -6,21 +6,21 @@ export default function TestimonialsSection() {
     {
       image: "/wise8.jpg",
       name: "Jane Doe",
-      country: "United States",
+      country: " Parent- Kenya",
       description:
         "Our accredited and vetted tutors are driven \n to help our students flourish and thrive. They \n inspire, instill confidence, encourage, know,\n and believe in their students.",
     },
     {
       image: "/wise9.jpg",
       name: "John Smith",
-      country: "Canada",
+      country: "Parent- Kenya",
       description:
         "Our accredited and vetted tutors are driven \n to help our students flourish and thrive. They\n inspire, instill confidence, encourage, know,\n and believe in their students.",
     },
     {
       image: "/wise7.jpg",
       name: "Alice Brown",
-      country: "United Kingdom",
+      country: "Parent- Kenya",
       description:
         "Our accredited and vetted tutors are driven \n to help our students flourish and thrive. They \ninspire, instill confidence, encourage, know,\n and believe in their students.",
     },
@@ -31,13 +31,13 @@ export default function TestimonialsSection() {
       {/* Left Section */}
       <div className="px-8 lg:px-16 mb-8 lg:mb-0 flex-1">
         <h3 className="text-2xl sm:text-2xl font-bold text-gray-800">What Our People <br /> Are Saying</h3>
-        <p className="text-gray-600 text-xs sm:text-base mt-2">
+        <p className="text-gray-600 text-xs sm:text-xs mt-2">
           Don’t just take our word for it. Hear it from <br />more than 20+ families.
         </p>
         <div className="flex items-center mt-4">
           <div className="flex ">
             {[...Array(5)].map((_, i) => (
-              <FaStar key={i} className="text-orange-500 text-sm mx-1" />
+              <FaStar key={i} className="text-orange-500 text-xs mx-1" />
             ))}
           </div>
           <p className="text-xs font-bold text-gray-800 ">
@@ -56,13 +56,13 @@ export default function TestimonialsSection() {
             {/* Stars */}
             <div className="flex">
               {[...Array(5)].map((_, i) => (
-                <FaStar key={i} className="text-orange-500 text-lg mx-1" />
+                <FaStar key={i} className="text-orange-500 text-xs mx-1" />
               ))}
             </div>
 
             {/* Description */}
             <p
-              className="text-gray-600 text-xs sm:text-sm mt-2"
+              className="text-gray-600 text-xs sm:text-xs mt-2"
               style={{ whiteSpace: "pre-line" }}
             >
               {testimonial.description}
@@ -80,7 +80,7 @@ export default function TestimonialsSection() {
                 />
               </div>
               <div className="ml-4">
-                <h4 className="text-sm sm:text-base font-semibold text-gray-800">
+                <h4 className="text-sm sm:text-sm font-semibold text-gray-800">
                   {testimonial.name}
                 </h4>
                 <p className="text-gray-600 text-xs sm:text-sm">{testimonial.country}</p>

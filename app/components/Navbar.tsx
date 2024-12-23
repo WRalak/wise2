@@ -5,7 +5,7 @@ import Link from "next/link";
 import { MdArrowOutward } from "react-icons/md";
 import { IoIosClose } from "react-icons/io";
 import { IoIosArrowDown } from "react-icons/io";
-import LoginForm from "../components/LoginForm";
+import LoginForm from "./LoginForm";
 
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -26,12 +26,12 @@ const Navbar: React.FC = () => {
     <nav className="backdrop-blur-md bg-white/80 shadow-md w-full fixed top-0 z-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16">
         {/* Logo */}
-        <div className="text-transparent bg-clip-text bg-gradient-to-r from-[#F43F5E] to-[#3B82F6] italic text-xl md:text-2xl font-bold">
+        <div className="text-transparent bg-clip-text bg-gradient-to-r from-[#F43F5E] to-[#3B82F6] italic text-xl md:text-2xl font-bold lg:ml-60">
           WISE
         </div>
 
         {/* Menu for larger screens */}
-        <div className="hidden md:flex items-center space-x-6 lg:mr-40">
+        <div className="hidden md:flex items-center space-x-6 lg:mr-52">
           <Link href="/">
             <p className="text-black text-sm">Home</p>
           </Link>
@@ -41,9 +41,14 @@ const Navbar: React.FC = () => {
             onMouseLeave={() => setIsHovered(false)}
             onClick={() => setIsContainerVisible(!isContainerVisible)}
           >
+            <Link href="/services">
             <p className="text-black text-xs cursor-pointer">
               Services
             </p>
+            </Link>
+           
+
+
             {(isHovered || isContainerVisible) && (
               <div className="absolute top-full left-0 mt-2 w-[240px] md:w-[320px] bg-white p-3 shadow-lg rounded-lg z-50">
                 {/* Close button */}

@@ -28,7 +28,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-, "app/components/Footer.jsx", "app/components/Header.jsx", "app/components/LoginForm.jsx", "app/components/mainFooter.jsx", "app/components/MainSection.jsx", "app/components/MainTwo.jsx", "app/components/Resources.jsx", "app/components/Section.jsx", "app/components/Testimonials.jsx", "app/services/page.jsx"  ],
+, "app/components/Footer.jsx", "app/components/Header.jsx", "app/components/LoginForm.jsx", "app/components/mainFooter.jsx", "app/components/MainSection.jsx", "app/components/MainTwo.jsx", "app/components/Resources.jsx", "app/components/Section.jsx", "app/components/Testimonials.jsx", "app/services/page.jsx", "app/components/Navbar.tsx"  ],
   "exclude": [
     "node_modules"
   ]
