@@ -7,7 +7,7 @@ const AboutUsSection = () => {
       {/* MidSection placed above About Us content */}
 
       {/* Image Container */}
-      <div className="relative w-full sm:w-[780px] h-[276px] mt-8">
+      <div className="relative w-full sm:w-[780px] h-[276px] mt-8 lg:ml-48">
         {/* Background Image */}
         <Image
           src="/wise1.jpeg" // Replace with your image path

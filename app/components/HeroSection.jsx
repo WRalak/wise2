@@ -17,7 +17,7 @@ const HeroTherapySection = () => {
             >
               Connecting families to <br /> trusted compassionate <br /> care companions.
             </h1>
-            <p className="text-gray-800 mb-8 text-xs sm:text-xs lg:text-sm leading-relaxed">
+            <p className="text-gray-800 mb-8 text-xs sm:text-xs lg:text-sm  leading-relaxed">
               WISEHealth provides a companion care program with vetted, <br />
               trained, and compassionate care companions to help with <br />
               socialization, meal preparation, and light housework.
@@ -33,7 +33,7 @@ const HeroTherapySection = () => {
 
               {/* Button 2 */}
               <Link href="/login">
-                <button className="bg-white border-2 text-blue-500 border-blue-500 px-4 py-2 text-xs sm:text-sm rounded-lg flex items-center gap-2 w-full sm:w-auto">
+                <button className="bg-white border-blue-500 text-blue-500 border px-4 py-2 text-xs sm:text-sm rounded-lg flex items-center gap-2 w-full sm:w-auto">
                   Register As Companion
                   <MdArrowOutward size={13} />
                 </button>

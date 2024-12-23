@@ -5,6 +5,8 @@ import Link from "next/link";
 import { MdArrowOutward } from "react-icons/md";
 import { IoIosClose } from "react-icons/io";
 import { IoIosArrowDown } from "react-icons/io";
+import { FaCheck } from "react-icons/fa";
+
 import LoginForm from "./LoginForm";
 
 const Navbar: React.FC = () => {
@@ -23,7 +25,7 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <nav className="backdrop-blur-md bg-white/80 shadow-md w-full fixed top-0 z-50">
+    <nav className="backdrop-blur-md bg-white/80  w-full fixed top-0 z-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16">
         {/* Logo */}
         <div className="text-transparent bg-clip-text bg-gradient-to-r from-[#F43F5E] to-[#3B82F6] italic text-xl md:text-2xl font-bold lg:ml-60">
@@ -59,18 +61,23 @@ const Navbar: React.FC = () => {
                   <IoIosClose size={20} />
                 </button>
                 <div>
-                  <p className="font-semibold text-gray-600 mb-2 flex items-center">
-                    <MdArrowOutward className="text-blue-800" size={15} />
+                  <p className="font-semibold text-gray-950 mb-2 flex items-center">
+                    <MdArrowOutward className="text-blue-800" size={13} />
                     Assessments
                   </p>
-                  <ul className="text-gray-500 text-xs space-y-1">
-                    <li>Health-Related Social Needs</li>
-                    <li>SDOH Needs</li>
-                    <li>Routine Needs</li>
+                  <ul className="text-gray-950 text-xs p-4 space-y-1">
+                  <p className="text-gray-950 text-xs">• Health-Related Social Needs</p>
+                  <p className="text-gray-950 text-xs">• SDOH Needs</p>
+                  <p className="text-gray-950 text-xs">• Routine Needs</p>
                   </ul>
-                  <p className="mt-4 font-semibold text-gray-600 flex items-center">
-                    <MdArrowOutward className="text-blue-800" size={15} />
-                    Follow-Up Program
+                  <p className="mt-4 font-semibold text-gray-800 flex items-center text-xs">
+                    <MdArrowOutward className="text-blue-800 " size={13} />
+                    Follow Up – Follow Along Program
+                        (CBO partnership & grant funded)
+                  </p>
+                  <p className="mt-4 font-semibold text-gray-800 flex items-center text-xs">
+                    <MdArrowOutward className="text-blue-800 " size={13} />
+                    Companion Care
                   </p>
                 </div>
               </div>
@@ -99,9 +106,10 @@ const Navbar: React.FC = () => {
           </Link>
           <button
             onClick={toggleFormVisibility}
-            className="bg-blue-500 text-white px-4 py-2 rounded-lg text-xs"
+            className="bg-blue-500 text-white flex px-4 py-2 rounded-lg text-xs"
           >
             Start for Free
+            <IoIosArrowDown className="ml-2 text-xs items-center" />
           </button>
         </div>
 

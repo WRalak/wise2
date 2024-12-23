@@ -7,7 +7,7 @@ import { BiBone } from "react-icons/bi";
 const HeroTwo = () => {
   return (
     <section className="w-full lg:mb-20 bg-blue-500 py-8">
-        <div className="mx-auto px-8 max-w-7xl">
+        <div className="mx-auto px-8 max-w-7xl lg:ml-12">
           {/* Heading */}
           <p className="text-sm font-medium lg:ml-52 text-white mb-8">
             What type of therapy are you looking for?
@@ -22,7 +22,8 @@ const HeroTwo = () => {
             </div>
 
             {/* Divider (visible on larger screens only) */}
-            <span className="mx-2 text-white hidden sm:block">|</span>
+            <span className="mx-2 text-white hidden sm:block h-4 text-xs leading-none">|</span>
+
 
             {/* Icon 2 */}
             <div className="flex items-center gap-2 mb-4 sm:mb-0">
@@ -31,7 +32,7 @@ const HeroTwo = () => {
             </div>
 
             {/* Divider (visible on larger screens only) */}
-            <span className="mx-2 text-white hidden sm:block">|</span>
+            <span className="mx-2 text-white hidden sm:block h-4 text-xs leading-none">|</span>
 
             {/* Icon 3 */}
             <div className="flex items-center gap-2 mb-4 sm:mb-0">
@@ -41,7 +42,7 @@ const HeroTwo = () => {
 
             {/* Divider (visible on larger screens only) */}
 
-            <span className="mx-2 text-white hidden sm:block">|</span>
+            <span className="mx-2 text-white hidden sm:block h-4 text-xs leading-none">|</span>
 
             {/* Icon 4 */}
             <div className="flex items-center gap-2 mb-4 sm:mb-0">

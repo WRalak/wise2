@@ -28,15 +28,15 @@ const HeaderSection = () => {
         {/* Buttons */}
         <div className="flex flex-wrap justify-center gap-4 ">
           {/* Blue Button */}
-          <button className="bg-blue-500 text-white px-4 py-2 rounded-xl  flex items-center gap-2 text-xs sm:text-sm md:text-base lg:text-base">
+          <button className="bg-blue-500 text-white px-4 py-2 rounded-xl  flex items-center gap-2 text-xs sm:text-xs md:text-xs lg:text-sm">
             Find Companion
-            <MdArrowOutward size={15} />
+            <MdArrowOutward size={13} />
           </button>
 
           {/* White Button */}
-          <button className="bg-white text-blue-800 border-1 border-blue-500 px-4 py-2 rounded-xl flex items-center gap-2 text-xs sm:text-sm md:text-base lg:text-base">
+          <button className="bg-white text-blue-800 border-1 border-blue-500 px-4 py-2 rounded-xl flex items-center gap-2 text-xs sm:text-xs md:text-xs lg:text-sm">
             Register As Companion
-            <MdArrowOutward size={15} />
+            <MdArrowOutward size={13} />
           </button>
         </div>
       </div>

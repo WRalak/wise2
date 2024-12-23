@@ -23,17 +23,17 @@ const LoginForm = ({ closeForm }) => {
 
       {/* Buttons with icons */}
       <div className="flex justify-between mb-4">
-        <Link href='/login' className="flex items-center justify-center w-[45%] py-2 px-4 border border-orange-300 rounded-xl text-orange-700 bg-orange-100">
+        <Link href="/login" className="flex items-center justify-center w-[45%] py-2 px-4 border border-orange-300 rounded-xl text-orange-700 bg-orange-100">
           <FaUser className="mr-2 text-xl" /> Individual
         </Link>
 
-        <Link href='/login' className="flex items-center justify-center w-[45%] py-2 px-4 border border-blue-300 rounded-xl text-blue-700 hover:bg-blue-100">
-          <GoOrganization className="mr-2 text-xl" /> Organisation  
+        <Link href="/login" className="flex items-center justify-center w-[45%] py-2 px-4 border border-blue-300 rounded-xl text-blue-700 hover:bg-blue-100">
+          <GoOrganization className=" text-xl" /> Organisation
         </Link>
       </div>
 
       {/* Main Action Button */}
-      <Link href='/login' className="w-full py-2 px-6 bg-blue-600 text-white rounded-xl hover:bg-blue-700 flex items-center justify-center">
+      <Link href="/login" className="w-full py-2 px-6 bg-blue-500 text-white rounded-xl flex items-center justify-center">
         <FaHandHoldingHeart className="mr-2 text-xl" /> Companion
       </Link>
     </div>
