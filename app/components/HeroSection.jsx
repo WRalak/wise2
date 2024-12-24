@@ -43,7 +43,7 @@ const HeroTherapySection = () => {
 
           {/* Image */}
           <div className="relative flex-1 flex justify-center lg:justify-end lg:self-center h-full">
-            <div className="relative w-full h-auto sm:w-96 sm:h-96 lg:w-[460px] lg:h-[600px]">
+            <div className="relative w-full h-[300px] sm:w-full sm:h-[300px] md:w-[400px] md:h-[400px] lg:w-[460px] lg:h-[600px]">
               <Image
                 src="/wise1.jpeg" // Ensure the path is correct
                 alt="Hero Image"
@@ -60,6 +60,3 @@ const HeroTherapySection = () => {
 };
 
 export default HeroTherapySection;
-
-
-
