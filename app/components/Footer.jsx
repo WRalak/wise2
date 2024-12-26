@@ -39,7 +39,7 @@ const Footer = () => {
           {/* GET IN TOUCH Section */}
           <h1 className="text-xs text-gray-500 mb-4 text-center sm:text-left">GET IN TOUCH</h1>
 
-          <div className="border-t-2 border-gray-100 mb-4"></div>
+          <div className=" border-t-2 border-gray-100 mb-4"></div>
 
           {/* Contact Info */}
           <div className="flex flex-col sm:flex-row justify-center sm:justify-start items-center gap-4 sm:gap-10 mb-6">
