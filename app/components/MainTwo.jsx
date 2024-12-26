@@ -1,7 +1,7 @@
 export default function CoreValuesSection() {
   return (
     <section className="w-full px-6 py-14">
-      <div className="lg:ml-[250px] lg:mr-20">
+      <div className="lg:ml-[330px] lg:mr-20">
         {/* Grid container */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Core Value Item */}

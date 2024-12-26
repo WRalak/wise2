@@ -1,11 +1,13 @@
 import React from "react";
-import { FaUser, FaHandHoldingHeart } from "react-icons/fa";
+import { FaUser, FaHandHoldingHeart } from "react-icons/fa"; 
 import { GoOrganization } from "react-icons/go";
 import Link from "next/link";
+
 
 const LoginForm = ({ closeForm }) => {
   return (
     <div className="relative p-4 w-[288px] h-[200px] bg-white rounded-lg shadow-lg">
+      
       <button 
         onClick={closeForm} 
         className="absolute top-2 right-2 text-gray-500 hover:text-gray-800"
@@ -15,29 +17,38 @@ const LoginForm = ({ closeForm }) => {
         </svg>
       </button>
 
+      
       <div className="text-center mb-3">
-        <h3 className="text-xl font-semibold">Login/Register</h3>
+        <h3 className="text-sm font-semibold">Login/Register</h3>
       </div>
 
       <p className="text-sm text-center mb-4">Would you like to continue?</p>
 
       {/* Buttons with icons */}
       <div className="flex justify-between mb-4">
-        <Link href="/login" className="flex items-center justify-center w-[45%] py-2 px-4 border border-orange-300 rounded-xl text-orange-700 bg-orange-100">
-          <FaUser className="mr-2 text-xl" /> Individual
-        </Link>
 
-        <Link href="/login" className="flex items-center justify-center w-[45%] py-2 px-4 border border-blue-300 rounded-xl text-blue-700 hover:bg-blue-100">
-          <GoOrganization className=" text-xl" /> Organisation
+        <Link href='/login' className="flex items-center justify-center w-[45%] py-2 px-4 border border-orange-300 rounded-xl text-orange-700 bg-orange-100">
+          <FaUser size={13} className="mr-1 text-xs" /> Individual
+        </Link>
+        
+  
+        <Link href='/login' className="flex items-center justify-center w-[45%] py-2 px-4 border border-blue-300 rounded-xl text-blue-700 hover:bg-blue-100">
+          <GoOrganization size={12} className="mr-2 text-xs" /> Organisation  
         </Link>
       </div>
 
       {/* Main Action Button */}
-      <Link href="/login" className="w-full py-2 px-6 bg-blue-500 text-white rounded-xl flex items-center justify-center">
-        <FaHandHoldingHeart className="mr-2 text-xl" /> Companion
+      <Link href='/login' className="w-full py-2 px-6 bg-blue-600 text-white rounded-xl hover:bg-blue-700 flex items-center justify-center">
+        <FaHandHoldingHeart  className="mr-1 text-xs" /> Companion
       </Link>
     </div>
   );
 };
 
 export default LoginForm;
+
+
+
+
+
+

@@ -28,7 +28,7 @@ const Navbar: React.FC = () => {
     <nav className="backdrop-blur-md bg-white/70  w-full fixed top-0 z-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16">
         {/* Logo */}
-        <div className="text-transparent bg-clip-text bg-gradient-to-r from-[#F43F5E] to-[#3B82F6] italic text-xl md:text-2xl font-bold lg:ml-60">
+        <div className="text-transparent bg-clip-text bg-gradient-to-r from-[#F43F5E] to-[#3B82F6] italic text-sm md:text-xl font-bold lg:ml-60">
           WISE
         </div>
 
@@ -144,29 +144,31 @@ const Navbar: React.FC = () => {
         <div className="md:hidden bg-white shadow-md">
           <div className="px-4 py-2 space-y-2">
             <Link href="/">
-              <p className="block text-black font-bold text-sm">Home</p>
+              <p className="block text-black font-bold text-xs">Home</p>
             </Link>
             <Link href="/services">
-              <p className="block text-black font-bold text-sm">Services</p>
+              <p className="block text-black font-bold text-xs">Services</p>
             </Link>
             <Link href="/resources">
-              <p className="block text-black font-bold text-sm">Resources</p>
+              <p className="block text-black font-bold text-xs">Resources</p>
             </Link>
             <Link href="/support">
-              <p className="block text-black font-bold text-sm">Support</p>
+              <p className="block text-black font-bold text-xs">Support</p>
             </Link>
             <Link href="/careers">
-              <p className="block text-black font-bold text-sm">Careers</p>
+              <p className="block text-black font-bold text-xs">Careers</p>
             </Link>
             <Link href="/contact">
-              <p className="block text-black font-bold text-sm">Contact Us</p>
+              <p className="block text-black font-bold text-xs">Contact Us</p>
             </Link>
-            <button className="block w-full text-left border-2 bg-white border-blue-600 text-blue-600 px-4 py-2 rounded text-sm">
+            <Link href='/login'><button className="block w-full text-left border-2 bg-white border-blue-600 text-blue-600 px-4 py-2 rounded text-sm">
               Log In
-            </button>
-            <button className="block w-full text-left bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 text-sm">
+            </button></Link>
+            <Link href='/login'>
+            <button className="block w-full text-left bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 text-sm mt-2">
               Start for Free
-            </button>
+            </button></Link>
+           
           </div>
         </div>
       )}

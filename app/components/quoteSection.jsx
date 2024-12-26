@@ -47,40 +47,42 @@ const QuoteSection = () => {
 
       {/* Our History Section */}
       
-       <section className="bg-white py-16 px-4 sm:px-6 w-full">
-        {/* Our History Heading */}
-        <h2 className="text-xs font-bold text-gray-950 text-center lg:text-left mb-8 lg:ml-[250px]">
-          Our History
-        </h2>
+      <section className="bg-white py-16 px-4 sm:px-6 w-full">
+  {/* Our History Heading */}
+  <h2 className="text-xs font-bold text-gray-950 text-center lg:text-left mb-8 lg:ml-[330px]">
+    Our History
+  </h2>
 
-        {/* Flex Container for Main Description and Key Initiatives */}
-        <div className="flex flex-col lg:flex-row gap-8 lg:ml-[250px] ml-4">
-          {/* Main Description */}
-          <div className="flex-1 text-gray-950">
-            <p className="text-xs leading-relaxed  text-gray-950 mb-4">
-              The Wellness Institute for Senior Empowerment (WISE) was established by a
-              national team of elite medical and mental health providers and clinicians
-              with over 120 years of combined professional geriatric care experience (from
-              Harvard, UT Austin, UTSW Med Ctr), older adults, and caregivers. The mission
-              - to empower seniors and their (ICs) with information, tools, and resources
-              to improve their health outcomes and quality of life (QOL) drives the four
-              core initiatives:
-            </p>
-          </div>
+  {/* Flex Container for Main Description and Key Initiatives */}
+  <div className="flex flex-col lg:flex-row gap-8 lg:ml-[330px]">
+    {/* Main Description */}
+    <div className="flex-1 text-gray-950">
+      <p className="text-xs leading-relaxed text-gray-950 mb-4">
+        The Wellness Institute for Senior Empowerment (WISE) was established by a
+        national team of elite medical and mental health providers and clinicians
+        with over 120 years of combined professional geriatric care experience (from
+        Harvard, UT Austin, UTSW Med Ctr), older adults, and caregivers. The mission
+        - to empower seniors and their (ICs) with information, tools, and resources
+        to improve their health outcomes and quality of life (QOL) drives the four
+        core initiatives:
+      </p>
+    </div>
 
-          {/* Key Initiatives */}
-          <div className="flex-1 text-gray-950 lg:mr-40">
-            <p className="text-xs leading-loose mb-4">
-              1. Continuous research to provide current and meaningful information to the
-              global community. <br />
-              2. Assess the (SODH), TOC, and routine needs of seniors and (ICs). <br />
-              3. Provide resources to meet their identified needs. <br />
-              4. Thereby improving the health outcomes and QOL for both older adults and
-              their (ICs).
-            </p>
-          </div>
-        </div>
-      </section>
+    {/* Key Initiatives */}
+    <div className="flex-1 text-gray-950 lg:mr-20">
+      <p className="text-xs leading-loose mb-4">
+        1. Continuous research to provide current and meaningful information to the
+        global community. <br />
+        2. Assess the (SODH), TOC, and routine needs of seniors and (ICs). <br />
+        3. Provide resources to meet their identified needs. <br />
+        4. Thereby improving the health outcomes and QOL for both older adults and
+        their (ICs).
+      </p>
+    </div>
+  </div>
+</section>
+
+
     </div>
   );
 };

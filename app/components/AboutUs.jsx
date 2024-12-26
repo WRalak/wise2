@@ -22,7 +22,7 @@ const AboutUsSection = () => {
 
         {/* Content */}
         <div className="absolute inset-0 flex flex-col justify-center items-start text-left text-white lg:mr-6 px-6 pl-12">
-          <h1 className="text-xs sm:text-sm md:text-lg font-semibold mb-2">ABOUT US</h1>
+          <h4 className="text-xs sm:text-xs md:text-xs font-semibold mb-2">ABOUT US</h4>
           {/* Red Divider */}
           <div className="w-[28px] h-[2px] bg-red-500 mb-8"></div>
           <p className="text-xs ">

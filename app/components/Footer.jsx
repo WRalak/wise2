@@ -37,7 +37,7 @@ const Footer = () => {
       <div className="bg-white py-16 px-6">
         <div className="max-w-screen-xl mx-auto lg:ml-[330px]">
           {/* GET IN TOUCH Section */}
-          <h1 className="text-sm text-gray-400 mb-4 text-center sm:text-left">GET IN TOUCH</h1>
+          <h1 className="text-xs text-gray-500 mb-4 text-center sm:text-left">GET IN TOUCH</h1>
 
           <div className="border-t-2 border-gray-100 mb-4"></div>
 
@@ -61,40 +61,54 @@ const Footer = () => {
             <div className="text-transparent bg-clip-text bg-gradient-to-r from-[#F43F5E] to-[#3B82F6] text-xl font-bold italic">
               WISE
             </div>
-            <p className="text-sm text-gray-800">
-              Our network of therapists and <br /> psychiatric providers specialize in 150+ conditions.
+            <p className="text-xs text-gray-950">
+              Our network of therapists and <br /> psychiatric providers have <br /> specializations in 150+ conditions.
             </p>
           </div>
 
           {/* LOCATION, NAVIGATION, PARTNERS */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 text-center sm:text-left">
             <div>
-              <h3 className="text-gray-500 text-sm mb-2">LOCATION</h3>
-              <p className="text-sm text-black">
+              <h3 className="text-gray-500 text-xs mb-3">LOCATION</h3>
+              <p className="text-xs text-black">
                 2578 Broadway #607<br />
                 New York, NY 10025
               </p>
             </div>
             <div>
-              <h3 className="text-gray-500 text-sm mb-2">NAVIGATION</h3>
-              <p className="text-sm">
-                <span className="block"><span className="text-red-600">|</span> Home</span>
-                <span className="block"><span className="text-red-600">|</span> Services</span>
-                <span className="block"><span className="text-red-600">|</span> For Therapists</span>
-              </p>
+              <h3 className="text-gray-500 text-xs mb-3 ">NAVIGATION</h3>
+              <p className="text-xs">
+  <span className="block mb-2">
+    <span className="text-red-400 mr-2 ">|</span> Home
+  </span>
+  <span className="block mb-2">
+    <span className="text-red-400 mr-2">|</span> Services
+  </span>
+  <span className="block">
+    <span className="text-red-400 mr-2">|</span> For Therapists
+  </span>
+</p>
+
             </div>
             <div>
-              <h3 className="text-gray-500 text-sm mb-2">PARTNERS</h3>
-              <p className="text-sm">
-                <span className="block"><span className="text-red-600">|</span> Cigna</span>
-                <span className="block"><span className="text-red-600">|</span> Optum</span>
-                <span className="block"><span className="text-red-600">|</span> Anthem</span>
-              </p>
+              <h3 className="text-gray-500 text-xs mb-3">PARTNERS</h3>
+              <p className="text-xs">
+  <span className="block mb-2">
+    <span className="text-red-400 mr-2">|</span> Cigna
+  </span>
+  <span className="block mb-2">
+    <span className="text-red-400 mr-2">|</span> Optum
+  </span>
+  <span className="block">
+    <span className="text-red-400 mr-2">|</span> Anthem
+  </span>
+</p>
+
             </div>
           </div>
 
           {/* Copyright */}
-          <div className=" mt-10 text-gray-950 text-xs">
+          <div className=" mt-10 text-gray-700 text-xs">
             &copy; {currentYear} 
           </div>
         </div>

@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { MdAdd, MdRemove } from "react-icons/md";
+import { MdArrowOutward } from "react-icons/md";
 
 const WellnessInstitute = () => {
   const [openFAQ, setOpenFAQ] = useState(new Array(10).fill(false));
@@ -128,19 +129,21 @@ const WellnessInstitute = () => {
       </section>
 
       {/* FAQs Section */}
+    
       <section className="w-full py-20 ">
-        <div className="container mx-auto px-4 text-center">
+      
+        <div className="container mx-auto px-4 text-center lg:ml-8">
           <h2 className="text-xl font-bold mb-6 ">FAQs</h2>
 
           {/* Collapsible FAQs */}
           <div className="flex flex-col items-start max-w-md mx-auto">
             {faqs.map((faq, index) => (
-              <div key={index} className="bg-white mb-4 cursor-pointer w-full">
+              <div key={index} className=" mb-4 cursor-pointer w-full">
                 <div
                   onClick={() => toggleFAQ(index)}
                   className="flex items-center"
                 >
-                  <div className="flex items-center justify-center w-6 h-6 bg-gray-300 rounded-full mr-4">
+                  <div className="flex items-center justify-center w-6 h-6  rounded-full mr-4">
                     {openFAQ[index] ? (
                       <MdRemove size={15} className="text-gray-600" />
                     ) : (
@@ -153,22 +156,34 @@ const WellnessInstitute = () => {
                 {openFAQ[index] && (
                   <div className="mt-2">
                     <p className="p-1 text-xs">{faq.answer}</p>
+                    
                   </div>
                 )}
+              
               </div>
             ))}
           </div>
+          <p className="text-xs text-blue-500 font-semibold flex justify-center items-center gap-1 lg:justify-start lg:ml-[395px]">
+      See more <MdArrowOutward size={13} />
+    </p>
         </div>
-        {/* Team Members */}
-        <div className="mt-12 text-left lg:ml-[330px]">
-          <h6 className="font-semibold mb-2">Amplified by a global team</h6>
-          <p className="text-xs">
-            The Wellness Institute for Senior Empowerment (WISE) was <br />
-            established by a national team of elite medical professionals.
-          </p>
-        </div>
+          
 
-        <div className="flex flex-wrap justify-center space-x-8 mt-6">
+        
+        {/* Team Members */}
+        <div className="mt-12 text-left md:text-center lg:text-left lg:ml-[350px] px-4 md:px-8 lg:px-0">
+  <h6 className="font-semibold mb-2 text-xs md:text-base lg:text-sm">
+    Amplified by a global team
+  </h6>
+  <p className="text-xs md:text-xs leading-relaxed">
+    The Wellness Institute for Senior Empowerment (WISE) was <br />
+    established by a national team of elite medical professionals.
+  </p>
+</div>
+
+
+
+        <div className="flex flex-wrap justify-center space-x-9 mt-6">
           {[ 
             { name: "John Doe", title: "Marketing", imgSrc: "/wise6.jpg" },
             { name: "Jane Smith", title: "Operations", imgSrc: "/wise8.jpg" },

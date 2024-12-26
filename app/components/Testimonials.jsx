@@ -27,31 +27,38 @@ export default function TestimonialsSection() {
   ];
 
   return (
-    <section className="w-full flex flex-col lg:flex-row bg-gray-50 py-12">
-      {/* Left Section */}
-      <div className="px-8 lg:px-16 mb-8 lg:mb-0 flex-1">
-        <h3 className="text-2xl sm:text-2xl font-bold text-gray-800">What Our People <br /> Are Saying</h3>
-        <p className="text-gray-600 text-xs sm:text-xs mt-2">
-          Don’t just take our word for it. Hear it from <br />more than 20+ families.
-        </p>
-        <div className="flex items-center mt-4">
-          <div className="flex ">
-            {[...Array(5)].map((_, i) => (
-              <FaStar key={i} className="text-orange-500 text-xs mx-1" />
-            ))}
-          </div>
-          <p className="text-xs font-bold text-gray-800 ">
-            (20+ testimonials)
-          </p>
-        </div>
-      </div>
 
-      {/* Right Section - Testimonials */}
-      <div className="flex overflow-x-auto gap-8 px-8 lg:px-16 space-x-4 lg:space-x-8 sm:space-x-4 ">
+    <section className="w-full flex flex-col lg:flex-row bg-gray-50 py-12 overflow-hidden">
+    {/* Left Section */}
+    <div className="px-8 lg:px-24 mb-8 lg:mb-0 flex-1 lg:ml-[250px]">
+  <h3 className="text-3xl sm:text-3xl font-bold text-gray-800 leading-tight">
+    What Our People <br /> Are Saying
+  </h3>
+  <p className="text-gray-950 text-xs sm:text-xs leading-relaxed mt-4">
+    Don’t just take our word for it. Hear it from <br />more than 20+ families.
+  </p>
+  <div className="flex items-center mt-6 space-x-4">
+    <div className="flex space-x-1">
+      {[...Array(5)].map((_, i) => (
+        <FaStar key={i} className="text-orange-500 text-base" />
+      ))}
+    </div>
+    <p className="text-sm font-bold text-gray-800 whitespace-nowrap">
+      (20+ testimonials)
+    </p>
+  </div>
+</div>
+
+
+
+  
+    {/* Right Section - Testimonials */}
+    <div className="overflow-hidden px-8 lg:px-16">
+      <div className="flex overflow-x-auto gap-20">
         {testimonials.map((testimonial, index) => (
           <div
             key={index}
-            className=" p-6 flex flex-col items-start max-w-xs sm:max-w-sm lg:max-w-xs"
+            className="p-6 flex flex-col items-start max-w-xs sm:max-w-sm lg:max-w-xs flex-shrink-0"
           >
             {/* Stars */}
             <div className="flex">
@@ -59,7 +66,7 @@ export default function TestimonialsSection() {
                 <FaStar key={i} className="text-orange-500 text-xs mx-1" />
               ))}
             </div>
-
+  
             {/* Description */}
             <p
               className="text-gray-600 text-xs sm:text-xs mt-2"
@@ -67,7 +74,7 @@ export default function TestimonialsSection() {
             >
               {testimonial.description}
             </p>
-
+  
             {/* Image and Info */}
             <div className="flex items-center mt-4">
               <div className="w-16 h-16 rounded-full overflow-hidden">
@@ -89,9 +96,8 @@ export default function TestimonialsSection() {
           </div>
         ))}
       </div>
-    </section>
-  );
+    </div>
+  </section>
+  
+ );
 }
-
-
-

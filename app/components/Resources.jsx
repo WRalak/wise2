@@ -54,7 +54,7 @@ export default function ExampleSection() {
   ];
 
   return (
-    <section className="px-4 lg:ml-[150px] lg:mr-[px] sm:px-8 lg:px-16 py-8">
+    <section className="px-4 lg:ml-[330px] lg:mr-[px] sm:px-8 lg:px-16 py-8">
       {/* Features Section */}
       <div className="mb-12">
         <h2 className="text-xl sm:text-3xl font-bold text-gray-800">
@@ -79,7 +79,7 @@ export default function ExampleSection() {
 <div>
 </div>
 <div className="flex flex-col items-start space-y-4">
-  <p className="text-xs sm:text-xs md:text-sm text-gray-950 leading-relaxed text-left">
+  <p className="text-xs sm:text-xs md:text-xs text-gray-950 leading-relaxed text-left">
     Join WISE Companion today and unlock your full potential as a corporate trainer. <br className="hidden md:block" />
     Elevate your training experience, connect with like-minded experts, and reach new <br className="hidden md:block" /> heights 
     in the world of corporate training. Together, we&apos;ll make a profound impact on <br className="hidden md:block" /> professional
