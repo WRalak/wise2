@@ -26,7 +26,7 @@ const HeroTherapySection = () => {
             <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
               {/* Button 1 */}
               <Link href="/login">
-                <button className="bg-blue-500 text-white px-4 py-2 lg:px-6 lg:py-3 text-xs sm:text-sm rounded-lg flex items-center gap-2 w-full sm:w-auto">
+                <button className="bg-blue-500 text-white px-4 py-2 lg:px-6 lg:py-3 text-xs sm:text-xs rounded-lg flex items-center gap-2 w-full sm:w-auto">
                   Find Compassion
                   <MdArrowOutward size={13} />
                 </button>
@@ -34,7 +34,7 @@ const HeroTherapySection = () => {
 
               {/* Button 2 */}
               <Link href="/login">
-                <button className="bg-white border-blue-500 text-blue-500 border px-4 py-2 lg:px-6 lg:py-3 text-xs sm:text-sm rounded-lg flex items-center gap-2 w-full sm:w-auto">
+                <button className="bg-white border-blue-500 text-blue-500 border px-4 py-2 lg:px-6 lg:py-3 text-xs sm:text-xs rounded-lg flex items-center gap-2 w-full sm:w-auto">
                   Register As Companion
                   <MdArrowOutward size={13} />
                 </button>
