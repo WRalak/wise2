@@ -144,22 +144,22 @@ const Navbar: React.FC = () => {
         <div className="md:hidden bg-white shadow-md">
           <div className="px-4 py-2 space-y-2 font-inter">
             <Link href="/">
-              <p className="block text-blue-500  text-xs">Home</p>
+              <p className="block text-blue-500  text-xs mb-2">Home</p>
             </Link>
             <Link href="/services">
-              <p className="block  text-blue-500  text-xs">Services</p>
+              <p className="block  text-blue-500  text-xs mb-2">Services</p>
             </Link>
             <Link href="/resources">
-              <p className="block  text-blue-500  text-xs">Resources</p>
+              <p className="block  text-blue-500  text-xs mb-2">Resources</p>
             </Link>
             <Link href="/support">
-              <p className="block  text-blue-500  text-xs">Support</p>
+              <p className="block  text-blue-500  text-xs mb-2">Support</p>
             </Link>
             <Link href="/careers">
-              <p className="block  text-blue-500  text-xs">Careers</p>
+              <p className="block  text-blue-500  text-xs mb-2">Careers</p>
             </Link>
             <Link href="/contact">
-              <p className="block  text-blue-500  text-xs">Contact Us</p>
+              <p className="block  text-blue-500  text-xs mb-2">Contact Us</p>
             </Link>
             <Link href='/login'><button className="block  text-left border bg-white border-blue-600 text-blue-600 px-4 py-2 rounded-lg text-sm">
               Log In
