@@ -77,48 +77,49 @@ const WellnessInstitute = () => {
   return (
     <div>
       {/* Container Section (Carousel) */}
-      <section className="w-full py-20">
-        <div className="container mx-auto px-4 lg:ml-64">
-          <div className="overflow-hidden">
-            <div
-              className="flex transition-transform duration-500 ease-in-out"
-              style={{
-                transform: `translateX(-${currentIndex * 240}px)`,
-              }}
-            >
-              {years.map((year, index) => (
-                <div
-                  key={index}
-                  className="min-w-[220px] sm:min-w-[280px] h-[170px] flex flex-col ml-2 bg-gray-200 p-4  rounded-md mx-2"
-                >
-                  <h3 className="text-xs font-bold mb-4">{year}</h3>
-                  <p className="text-xs  p-1 text-start">
-                    <span className="text-blue-500 text-xs mb-2 ">|</span>
-                     The Wellness Institute for Senior <br /> Empowerment (WISE) was established by.
-                  </p>
-                  <p className="text-xs  p-1 text-start mt-3">
-                    <span className="text-blue-500 text-xs  ">|</span>
-                     The Wellness Institute for Senior <br /> Empowerment (WISE) was established by.
-                  </p>
-                </div>
-              ))}
-            </div>
+      <section className="w-full py-20 overflow-x-hidden"> 
+  <div className="container mx-auto px-4 lg:ml-64">
+    <div className="overflow-hidden">
+      <div
+        className="flex transition-transform duration-500 ease-in-out"
+        style={{
+          transform: `translateX(-${currentIndex * 240}px)`,
+        }}
+      >
+        {years.map((year, index) => (
+          <div
+            key={index}
+            className="min-w-[220px] sm:min-w-[280px] h-[170px] flex flex-col ml-2 bg-gray-200 p-4  rounded-md mx-2"
+          >
+            <h3 className="text-xs font-bold mb-4">{year}</h3>
+            <p className="text-xs p-1 text-start">
+              <span className="text-blue-500 text-xs mb-2">|</span>
+              The Wellness Institute for Senior <br /> Empowerment (WISE) was established by.
+            </p>
+            <p className="text-xs p-1 text-start mt-3">
+              <span className="text-blue-500 text-xs">|</span>
+              The Wellness Institute for Senior <br /> Empowerment (WISE) was established by.
+            </p>
           </div>
+        ))}
+      </div>
+    </div>
 
-          {/* Dot Indicators (for carousel) */}
-          <div className="flex  space-x-2 mt-4 ">
-            {years.map((_, index) => (
-              <div
-                key={index}
-                className={`h-2 w-2 rounded-full cursor-pointer ${
-                  index === currentIndex ? "bg-blue-600" : "bg-blue-300"
-                }`}
-                onClick={() => handleDotClick(index)}
-              ></div>
-            ))}
-          </div>
-        </div>
-      </section>
+    {/* Dot Indicators (for carousel) */}
+    <div className="flex space-x-2 mt-4">
+      {years.map((_, index) => (
+        <div
+          key={index}
+          className={`h-2 w-2 rounded-full cursor-pointer ${
+            index === currentIndex ? "bg-blue-600" : "bg-blue-300"
+          }`}
+          onClick={() => handleDotClick(index)}
+        ></div>
+      ))}
+    </div>
+  </div>
+</section>
+
 
       {/* Image Section (Responsive Image) */}
       <section className="py-10">
@@ -176,7 +177,7 @@ const WellnessInstitute = () => {
 
         
         {/* Team Members */}
-        <div className="mt-12 text-left md:text-center lg:text-left px-4 md:px-8 lg:px-0  lg:ml-[380px]">
+        <div className="mt-12 text-left md:text-center lg:text-left px-4 md:px-8 lg:px-0 lg:ml-[380px]">
   <h6 className="font-semibold mb-2 text-xs md:text-base lg:text-sm">
     Amplified by a global team
   </h6>
@@ -185,6 +186,7 @@ const WellnessInstitute = () => {
     established by a national team of elite medical professionals.
   </p>
 </div>
+
 
 
 
