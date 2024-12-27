@@ -6,7 +6,7 @@ const QuoteSection = () => {
   return (
     <div className="flex justify-center items-center flex-col">
       {/* Quote Section */}
-      <section className="bg-gray-50 py-16 px-4 sm:px-6 flex justify-center items-center w-full">
+      <section className="bg-white py-16 px-4 sm:px-6 flex justify-center items-center w-full">
   <div className="max-w-lg text-center">
     {/* Quote Text with Icon */}
     <div className="flex  items-center mb-6">

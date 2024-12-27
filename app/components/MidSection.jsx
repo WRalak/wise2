@@ -78,7 +78,7 @@ const WellnessInstitute = () => {
     <div>
       {/* Container Section (Carousel) */}
       <section className="w-full py-20 overflow-x-hidden"> 
-  <div className="container mx-auto px-4 lg:ml-64">
+  <div className="container mx-auto px-4 lg:ml-72">
     <div className="overflow-hidden">
       <div
         className="flex transition-transform duration-500 ease-in-out"
