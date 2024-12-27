@@ -7,7 +7,7 @@ const HeroTherapySection = () => {
   return (
     <div className="bg-gray-50 flex flex-col w-full">
       <section className="flex items-center justify-center w-full py-6 mx-auto max-w-screen-xl mt-[40px] sm:mt-[50px] md:mt-[100px]">
-        <div className="w-full flex flex-col lg:flex-row items-stretch gap-8 px-4 sm:px-6 lg:gap-8 lg:ml-[260px] lg:mr-[30px]">
+        <div className="w-full flex flex-col lg:flex-row items-stretch gap-8 px-4 sm:px-6 lg:gap-8 lg:ml-[266px] lg:mr-[30px]">
           
           {/* Text Content */}
           <div className="flex-1 flex flex-col justify-center text-center lg:text-left lg:self-center mb-8 sm:mb-0 lg:mt-auto">

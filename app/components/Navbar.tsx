@@ -28,7 +28,7 @@ const Navbar: React.FC = () => {
     <nav className="backdrop-blur-md bg-white/70  w-full fixed top-0 z-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20">
         {/* Logo */}
-        <div className="text-transparent bg-clip-text bg-gradient-to-r from-[#F43F5E] to-[#3B82F6] font-sans  italic text-sm md:text-xl font-bold lg:ml-52">
+        <div className="text-transparent bg-clip-text bg-gradient-to-r from-[#F43F5E] to-[#3B82F6] font-sans  italic text-sm md:text-xl font-bold lg:ml-60">
           WISE
         </div>
 
@@ -61,7 +61,7 @@ const Navbar: React.FC = () => {
                   <IoIosClose size={20} />
                 </button>
                 <div>
-                  <p className="font-semibold text-gray-950 mb-2 flex items-center">
+                  <p className="font-semibold text-gray-950 mb-2 flex items-center text-xs">
                     <MdArrowOutward className="text-blue-800" size={13} />
                     Assessments
                   </p>

@@ -19,7 +19,7 @@ const HeaderSection = () => {
       {/* Overlay Content */}
       <div className="absolute inset-0 bg-black bg-opacity-30 flex flex-col items-center justify-center text-center px-6 pt-16 sm:pt-24 md:pt-32">
         {/* Text */}
-        <p className="text-white text-xs sm:text-sm md:text-lg lg:text-sm font-medium mb-4 leading-relaxed">
+        <p className="text-white text-xs sm:text-xs md:text-xs lg:text-xs  mb-6  line-height: 1.8;">
           WISE offers services designed to support survivors from entry to stabilization to <br />
           independence. All services are individualized, relationship-based, strengths- <br />
           based, trauma-informed, self-determination, empowerment, and holistic.
@@ -28,13 +28,13 @@ const HeaderSection = () => {
         {/* Buttons */}
         <div className="flex flex-wrap justify-center gap-4 ">
           {/* Blue Button */}
-          <button className="bg-blue-500 text-white px-4 py-2 rounded-xl  flex items-center gap-2 text-xs sm:text-xs md:text-xs lg:text-sm">
+          <button className="bg-blue-500 text-white px-4 py-2 rounded-xl  flex items-center gap-2 text-xs sm:text-xs md:text-xs lg:text-xs">
             Find Companion
             <MdArrowOutward size={13} />
           </button>
 
           {/* White Button */}
-          <button className="bg-white text-blue-800 border-2 border-blue-500 px-4 py-2 rounded-xl flex items-center gap-2 text-xs sm:text-xs md:text-xs lg:text-sm">
+          <button className="bg-white text-blue-800 border-[0.5px] border-blue-500 px-4 py-2 rounded-xl flex items-center gap-2 text-xs sm:text-xs md:text-xs lg:text-xs">
             Register As Companion
             <MdArrowOutward size={13} />
           </button>
