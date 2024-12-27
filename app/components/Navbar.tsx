@@ -95,7 +95,7 @@ const Navbar: React.FC = () => {
         </div>
 
         {/* Right section */}
-        <div className="hidden md:flex items-center space-x-4 lg:mr-10">
+        <div className="hidden md:flex items-center space-x-4 lg:mr-9">
           <Link href="/contact">
             <p className="text-black text-xs">Contact Us</p>
           </Link>
@@ -142,30 +142,30 @@ const Navbar: React.FC = () => {
       {/* Mobile menu */}
       {isMenuOpen && (
         <div className="md:hidden bg-white shadow-md">
-          <div className="px-4 py-2 space-y-2">
+          <div className="px-4 py-2 space-y-2 font-inter">
             <Link href="/">
-              <p className="block text-black font-bold text-xs">Home</p>
+              <p className="block text-blue-500  text-xs">Home</p>
             </Link>
             <Link href="/services">
-              <p className="block text-black font-bold text-xs">Services</p>
+              <p className="block  text-blue-500  text-xs">Services</p>
             </Link>
             <Link href="/resources">
-              <p className="block text-black font-bold text-xs">Resources</p>
+              <p className="block  text-blue-500  text-xs">Resources</p>
             </Link>
             <Link href="/support">
-              <p className="block text-black font-bold text-xs">Support</p>
+              <p className="block  text-blue-500  text-xs">Support</p>
             </Link>
             <Link href="/careers">
-              <p className="block text-black font-bold text-xs">Careers</p>
+              <p className="block  text-blue-500  text-xs">Careers</p>
             </Link>
             <Link href="/contact">
-              <p className="block text-black font-bold text-xs">Contact Us</p>
+              <p className="block  text-blue-500  text-xs">Contact Us</p>
             </Link>
-            <Link href='/login'><button className="block w-full text-left border-2 bg-white border-blue-600 text-blue-600 px-4 py-2 rounded text-sm">
+            <Link href='/login'><button className="block  text-left border bg-white border-blue-600 text-blue-600 px-4 py-2 rounded-lg text-sm">
               Log In
             </button></Link>
             <Link href='/login'>
-            <button className="block w-full text-left bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 text-sm mt-2">
+            <button className="block w-full text-left bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700 text-sm mt-2">
               Start for Free
             </button></Link>
            

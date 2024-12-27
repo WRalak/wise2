@@ -44,13 +44,13 @@ const HeroTherapySection = () => {
 
           {/* Image */}
           <div className="relative flex-1 flex justify-center lg:justify-end lg:self-center h-full">
-            <div className="relative w-full h-[300px] sm:w-full sm:h-[300px] md:w-[800px] md:h-[400px] lg:w-[460px] lg:h-[502px]">
+            <div className="relative w-full h-[300px] sm:w-full sm:h-[300px] md:w-[800px] md:h-[400px] lg:w-[460px] lg:h-[502px] lg:mr-10">
               <Image
                 src="/wise1.jpeg" // Ensure the path is correct
                 alt="Hero Image"
                 layout="fill"
                 objectFit="cover"
-                className="rounded"
+                className="rounded-lg"
               />
             </div>
           </div>

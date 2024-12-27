@@ -78,7 +78,7 @@ const WellnessInstitute = () => {
     <div>
       {/* Container Section (Carousel) */}
       <section className="w-full py-20">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 lg:ml-64">
           <div className="overflow-hidden">
             <div
               className="flex transition-transform duration-500 ease-in-out"
@@ -89,11 +89,16 @@ const WellnessInstitute = () => {
               {years.map((year, index) => (
                 <div
                   key={index}
-                  className="min-w-[220px] sm:min-w-[280px] h-[170px] flex flex-col items-center bg-white p-4 shadow-md rounded-md mx-2"
+                  className="min-w-[220px] sm:min-w-[280px] h-[170px] flex flex-col ml-2 bg-gray-200 p-4  rounded-md mx-2"
                 >
-                  <h3 className="text-xl font-bold mb-4">{year}</h3>
-                  <p className="text-sm text-center">
-                    The Wellness Institute for Senior Empowerment (WISE) was established by.
+                  <h3 className="text-xs font-bold mb-4">{year}</h3>
+                  <p className="text-xs  p-1 text-start">
+                    <span className="text-blue-500 text-xs mb-2 ">|</span>
+                     The Wellness Institute for Senior <br /> Empowerment (WISE) was established by.
+                  </p>
+                  <p className="text-xs  p-1 text-start mt-3">
+                    <span className="text-blue-500 text-xs  ">|</span>
+                     The Wellness Institute for Senior <br /> Empowerment (WISE) was established by.
                   </p>
                 </div>
               ))}
@@ -101,7 +106,7 @@ const WellnessInstitute = () => {
           </div>
 
           {/* Dot Indicators (for carousel) */}
-          <div className="flex justify-center space-x-2 mt-4">
+          <div className="flex  space-x-2 mt-4 ">
             {years.map((_, index) => (
               <div
                 key={index}
@@ -132,8 +137,8 @@ const WellnessInstitute = () => {
     
       <section className="w-full py-20 ">
       
-        <div className="container mx-auto px-4 text-center lg:ml-8">
-          <h2 className="text-xl font-bold mb-6 ">FAQs</h2>
+        <div className="container mx-auto px-4">
+          <h1 className="text-xl font-bold mb-6 text-center">FAQs</h1>
 
           {/* Collapsible FAQs */}
           <div className="flex flex-col items-start max-w-md mx-auto">
@@ -171,7 +176,7 @@ const WellnessInstitute = () => {
 
         
         {/* Team Members */}
-        <div className="mt-12 text-left md:text-center lg:text-left lg:ml-[350px] px-4 md:px-8 lg:px-0">
+        <div className="mt-12 text-left md:text-center lg:text-left px-4 md:px-8 lg:px-0  lg:ml-[380px]">
   <h6 className="font-semibold mb-2 text-xs md:text-base lg:text-sm">
     Amplified by a global team
   </h6>
@@ -183,7 +188,7 @@ const WellnessInstitute = () => {
 
 
 
-        <div className="flex flex-wrap justify-center space-x-9 mt-6">
+        <div className="flex flex-wrap justify-center space-x-9 mt-6 sm:text-center">
           {[ 
             { name: "John Doe", title: "Marketing", imgSrc: "/wise6.jpg" },
             { name: "Jane Smith", title: "Operations", imgSrc: "/wise8.jpg" },
